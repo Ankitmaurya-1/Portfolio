@@ -11,21 +11,23 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #18181b;
 }
 
 /* Header  */
 
 nav{
   height: 15vh;
-  background-color: black;
+  /* background-color: rgb(18, 18, 62); */
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-nav .logo a{
+.logo a {
+  text-decoration: none;
   color: white;
   font-size: 3em;
-  text-decoration: none;
+  
 }
 ul{
   display: flex;
@@ -37,12 +39,13 @@ ul li {
 ul li a{
   text-decoration: none;
   position: relative;
-  color: grey;
-  font-size: 1.2em;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 2.5px;
+  
 }
 ul li a:hover{
-  /* text-decoration: underline; */
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
   transition: all 0.8ms ease-in-out;
 }
 
@@ -52,7 +55,7 @@ ul li a::after{
   left: 0;
   height: 2px;
   width: 0;
-  bottom: -10px;
+  bottom: -10px; 
   background-color: #1d4ed8;
   transition: all 0.3s ease;
 }
@@ -60,3 +63,13 @@ ul li a:hover::after{
   width: 80%;
   
 }
+
+/* Hero section */
+
+/* .hero{
+  height: 800vh;
+  background-color: red;
+  box-shadow: 0 0 1000px 50px #1d4ed8;
+  z-index: 100;
+
+} */
